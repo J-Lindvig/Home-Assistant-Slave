@@ -1,0 +1,79 @@
+title: Hjemmet
+views:
+  - badges:
+      - entity: sensor.gangen_sensor_2
+      - entity: sensor.emilios_vaerelse_remote
+      - entity: sensor.indgang_remote
+      - entity: sensor.colins_vaerelse_remote
+      - entity: sensor.lys_i_reol_remote
+      - entity: sensor.gangen_remote
+      - entity: sensor.nathalies_sengelamper_remote
+      - entity: sensor.hjaltes_vaerelse_remote
+      - entity: sensor.lille_badevaerelse_remote
+      - entity: sensor.gangen_sensor_1
+      - entity: sensor.lille_badevaerelse_sensor
+    cards:
+      - entities:
+          - light.gangen_3
+          - light.emilios_loftlampe
+          - light.gangen_12
+          - light.gangen_14
+          - light.hjaltes_loftlampe_3
+          - light.gangen_13
+          - light.hjaltes_loftlampe_1
+          - light.indgang_1
+          - light.hjaltes_loftlampe_2
+          - light.indgang_2
+          - light.emilios_gulvlampe
+          - light.indgang_3
+          - light.gangen_10
+          - light.toilet_lille_badevaerelse
+          - light.gangen_2
+          - light.skabe_lille_badevaerelse
+          - light.dor_lille_badevaerelse
+          - light.bruser_lille_badevaerelse
+          - light.colins_lampe
+          - light.spejl_lille_badevaerelse
+          - light.colins_loftlampe
+          - light.gangen_6
+          - light.gangen_8
+          - light.gangen_9
+          - light.handklaedetorrer_lille_badevaerelse
+          - light.gangen_1
+          - light.gangen_7
+          - light.gangen_11
+          - light.gangen_4
+          - light.gangen_5
+        title: Lys
+        type: entities
+      - entities:
+          - switch.lys_over_skabe_venstre
+          - switch.lys_over_skabe_hojre
+          - switch.nathalies_sengelamper
+          - switch.hjaltes_koleskab
+          - switch.lys_i_reol
+        title: Kontakt
+        type: entities
+      - entities:
+          - entity: light.gangen_1
+          - entity: light.gangen_2
+          - entity: light.gangen_3
+        show_header_toggle: true
+        title: Gangen
+        type: entities
+    path: default_view
+    title: Home
+  - badges: []
+    cards:
+      - entity: weather.smhi_test_hjem
+        name: 1...
+        type: weather-forecast
+    icon: 'mdi:bank'
+    panel: false
+    path: hovedvindeu
+    title: Hovedvindue
+  - badges: []
+    cards: []
+    icon: 'mdi:bus-alert'
+    path: test-side
+    title: test side
